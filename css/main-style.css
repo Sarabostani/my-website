@@ -1,0 +1,264 @@
+body,html{
+	height: 100%;
+}
+.menu-btn{
+	z-index: 5;
+	background: rgba(250,250,250,0.9);
+	border-radius: 50%;
+	box-shadow: 3px 2px 1px 1px #aaa;
+	position: fixed;
+	top:15px;
+	right: 15px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	width:50px;height: 50px;
+}
+.menu-btn span{
+	background: #444;
+	display: block;
+	width:27px;
+	height: 4px;
+	margin: 6px 0px 4px 12px;
+}
+.menu-btn span:nth-child(1){
+	margin-top:12px;
+	transition: transform 0.5s;
+}
+.menu-btn span:nth-child(2){
+	transition:opacity 0.5s;
+}
+.menu-btn span:nth-child(3){
+	transition:transform 0.5s;
+}
+
+.cross span:nth-child(1){
+	transform: translate(0px, 12px) rotate(45deg);
+	transition: transform 0.5s;
+}
+.cross span:nth-child(2){
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+.cross span:nth-child(3){
+	transform: translate(0px, -8px) rotate(-45deg);
+	transition:transform 0.5s;
+}
+
+.menu-btn:after{}
+#main-menu{
+	display: none;
+	background: rgba(10,10,10,0.85);
+	position: fixed;
+	width:100%;
+	bottom: 0; top: 0;
+	z-index: 2;
+}
+#main-menu ul{
+	margin:0; padding: 0;
+	list-style: none;
+	color: white;
+}
+
+#main-menu ul li a{
+	text-align: center;
+	color:white;
+	text-decoration: none;
+	font-size: 2em;
+	font-weight: bold;
+	display: block;
+	padding: 5px;
+	margin: 4px 0px; 
+}
+/*.anchor{display: none;}*/
+.opj-link{
+	cursor: pointer;
+}
+.opj-link:hover{
+	text-decoration: underline;
+}
+.section{
+	padding: 5rem 0rem;
+}
+.section img{
+	width:50%;
+}
+.header{
+	background:#DB7B34;
+	color:white;
+	text-align: center;
+}
+.header p{
+	color:#333;
+}
+
+
+.header ul{color:#333;}
+
+.name{
+	font-weight: bold;
+	animation-fill-mode:both;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+}
+.jpl{
+	background:url('../images/space.jpg') no-repeat;
+	background-position: -100px -100px; 
+	color:white;
+	font-weight: bold;
+	text-shadow:0px 0px 2px black;
+}
+
+.brannen{
+	/*background:url('../images/space.jpg') no-repeat;*/
+	background: #16282B;
+	color:white;
+	font-weight: bold;
+	text-shadow:0px 0px 2px black;	
+}
+
+.brannen img{
+	max-width: 250px 
+}
+
+.redteal{
+	background: #3C180E;
+	color:white;
+}
+
+.redteal img{
+	max-width: 250px;
+}
+.ucla{
+	background:url('../images/ucla.jpg') no-repeat center;
+	background-size: cover;
+	color:white;
+	text-shadow:0px 0px 2px black;
+}
+
+.ucla img{
+	max-width: 250px
+}
+
+a.logo{
+	padding:10px;
+	filter:grayscale(1);
+}
+.logo img{
+	width:50px; height:50px;
+	filter:grayscale(1);
+	transition:transform 1s;
+}
+.logo img:hover{
+	transform:rotate(360deg);
+}
+.text-center{
+	text-align: center;
+}
+
+@keyframes fadeInRight{
+	from {opacity: 0; margin-right:-100px;}
+	to {opacity: 1;margin-right: 0px;}
+}
+
+@keyframes fadeIn{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@keyframes fadeInDown{
+	from {opacity: 0; margin-top: -100px;}
+	to {opacity: 1; margin-top:0px }
+}
+
+@keyframes fadeInLeft{
+	from {opacity: 0; margin-left:-100px;}
+	to {margin-left: 0px; opacity: 1;}
+}
+
+#profile-pic{
+	animation-fill-mode:both;
+	border-radius: 50%;
+	width:90%;
+	animation-name:fadeInLeft;
+	animation-duration:1s;
+}
+
+@media(min-width: 400px){
+	.section{
+		padding: 6rem 0rem;
+	}
+	#profile-pic{
+		max-width: 90%;
+	}
+	.section img{
+		width:50%;
+	}
+	.logo img{
+		width:50px; height: 50px;
+	}
+}
+@media(min-width:550px){
+	#profile-pic{
+		max-width: 80%;
+	}
+	.name{text-align: left;}
+}
+@media(min-width: 750px){
+	.section{
+		padding: 7rem 0rem;
+	}
+	#profile-pic{
+		max-width: 70%;
+	}
+	.name{text-align: left;}
+}
+@media(min-width:1000px){	
+	.section{
+		padding: 9rem 0rem;
+	}
+	.section img{
+		width:40%;
+	}
+	.logo img{
+		width:50px;height: 50px;
+	}
+	#profile-pic{
+		max-width: 60%;
+	}
+}
+@media(min-width:1200px){	
+	.section{
+		padding: 12rem 0rem;
+	}
+	#profile-pic{
+		max-width: 50%;
+	}
+}
+
+.sidebar{
+	background: #2B556F;
+	color:white;
+	padding: 10px;
+	height: 100%;
+}
+
+.sidebar ul{list-style: none;}
+.sidebar ul li{font-weight: bold}
+.sidebar li a{
+	color:white;
+	text-decoration: none;
+}
+.sidebar li a:hover{text-decoration: underline;}
+.item-content{background: white}
+
+#resume-img{
+	width: 128px;
+	margin: auto;
+}
+.img-thumbnail{
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin:5px;
+	box-shadow: 2px 2px 2px #ddd;
+}

@@ -1,0 +1,22 @@
+div.sidebar{
+	position: fixed;
+	width:200px;
+	top:0; bottom: 0;
+	background:#555;
+}
+
+.side-nav{
+	list-style: none;
+	color:white;
+	padding: 10px;
+	margin: auto;
+}
+#gl-content{
+	padding:20px;
+	padding-left: 220px;
+}
+canvas{
+	width:1240px; height: 768px;
+	margin:auto;
+	background:rgb(140,140,140);
+}
